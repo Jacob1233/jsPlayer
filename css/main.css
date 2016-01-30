@@ -1,0 +1,65 @@
+body {
+    font-family: sans-serif;
+}
+
+div {
+    border: solid black 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+div[class*="x"] {
+    background-color: red;
+}
+
+div[class*="flex"] {
+    background-color: green;
+}
+
+div[class*="block"] {
+    background-color: blue;
+}
+
+div[class*="inline"] {
+    background-color: yellow;
+}
+
+.flex {
+    display: flex;
+}
+
+.x1 {
+    flex: 1;
+}
+
+.x2 {
+    flex: 2;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.inline {
+    display: inline-block;
+}
+
+#back {
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+    filter: FlipH;
+}
+#album-art {
+    width: 47px;
+    height: 47px;
+}
